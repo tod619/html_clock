@@ -26,6 +26,7 @@ html {
     border: 0.5rem solid #777;
     box-shadow: 0.5rem 0.5rem 1rem #555,
                 -0.5rem -0.5rem 1rem #555;
+    position: relative;
 
 }
 
@@ -66,3 +67,46 @@ html {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.arrows {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrows::before {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.5rem #777;
+    z-index: 10;
+}
+
+.arrows div {
+    width: 0.7rem;
+    height: 12rem;
+    background-color: #fff0f5;
+    position: absolute;
+    bottom: 50%;
+    box-shadow: 0.2rem 0.2rem 0.5rem #777;
+    border-radius: 100% 100% 0 0;
+    transform-origin: bottom center;
+}
+
+.arrows .hour {
+    height: 10rem;
+    transform: rotate(90deg);
+}
+
+.arrows .second {
+    background-color: #24cfe6;
+    transform: rotate(270deg);
+}
+
