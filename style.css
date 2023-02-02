@@ -26,4 +26,43 @@ html {
     border: 0.5rem solid #777;
     box-shadow: 0.5rem 0.5rem 1rem #555,
                 -0.5rem -0.5rem 1rem #555;
+
+}
+
+.numbers {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.numbers div {
+    position: absolute;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.2rem #222;
+
+}
+
+.twelve {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.three {
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.six {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nine {
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
